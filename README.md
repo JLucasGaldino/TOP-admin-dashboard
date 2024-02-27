@@ -1,0 +1,2 @@
+# TOP-admin-dashboard
+In this project, I am using CSS grid and flex in order to create a simple mockup dashboard layout. I am also putting into practice the principles of BEM (block, element, modifier) in the naming conventions.

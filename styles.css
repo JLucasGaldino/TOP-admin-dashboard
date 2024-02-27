@@ -1,0 +1,157 @@
+:root {
+    --bg-color: #142D4C;
+    --pri-color: #385170;
+    /*--sec-color: #9FD3C7;*/
+    --sec-color: #4D426E;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Mona Sans";
+    src: url("Mona-Sans.ttf");
+}
+
+.title {
+    color: #EAEBEC;
+    font-family: "Mona Sans";
+    margin-left: 15px;
+}
+
+.dashboard {
+    height: 100vh;
+
+    display: grid;
+    grid: 200px 1fr / 300px 1fr;
+    background-color: var(--bg-color);
+}
+
+.header {
+    grid-area: 1 / 2 / 2 / 3;
+    position: relative;
+    z-index: 998;
+
+    background-color: var(--pri-color);
+    box-shadow: #00000077 0px 2px 5px;
+
+    display: grid;
+    grid: 1fr 1fr / 2fr 1fr;
+    margin-bottom: 15px;
+}
+
+.search-bar {
+    grid-area: 1 / 1 / 2 / 2;
+
+}
+
+.profile {
+    grid-area: 1 / 2 / 2 / 3;
+
+}
+
+.action-bar {
+    grid-area: 2 / 1 / 3 / 3;
+
+    display: grid;
+    grid: 1fr / repeat(5, 1fr);
+}
+
+.welcome {
+    grid-area: 1 / 1 / 2 / 4;
+
+}
+
+.action-list {
+    grid-area: 1 / 4 / 2 / 6;
+
+}
+
+.sidebar {
+    grid-area: 1 / 1 / 3 / 2;
+    position: relative;
+    z-index: 999;
+
+    background-color: var(--sec-color);
+
+    display: grid;
+    grid: auto auto auto 1fr / 1fr;
+    gap: 50px;
+}
+
+.main {
+    grid-area: 2 / 2 / 3 / 3;
+
+    background-color: var(--bg-color);
+
+    display: grid;
+    grid: 1fr / 3fr 1fr;
+}
+
+.project-list {
+    
+    display: grid;
+    grid: auto 1fr / 1fr;
+    padding-left: 15px;
+}
+
+.project-list__title {
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+.project-list__content {
+
+    display: grid;
+    grid: repeat(3, 1fr) / repeat(3, 1fr);
+    gap: 30px;
+    padding: 15px;
+}
+
+.card {
+    background-color: var(--pri-color);
+    border-radius: 15px;
+    box-shadow: #00000077 2px 2px 5px;
+}
+
+.inner-sidebar {
+    display: grid;
+}
+
+.announcements {
+
+    display: grid;
+    grid: auto 1fr / 1fr;
+    padding: 15px;
+    gap: 15px;
+}
+
+.announcements__title {
+    position: relative;
+}
+
+.announcements__content {
+    background-color: var(--pri-color);
+    border-radius: 15px;
+    box-shadow: #00000077 2px 2px 5px;
+}
+
+.trending {
+
+    display: grid;
+    grid: auto 1fr / 1fr;
+    padding: 15px;
+    gap: 15px;
+}
+
+.trending__title {
+    position: relative;
+}
+
+.trending__content {
+    background-color: var(--pri-color);
+    border-radius: 15px;
+    box-shadow: #00000077 2px 2px 5px;
+}
