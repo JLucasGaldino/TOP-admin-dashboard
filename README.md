@@ -14,3 +14,10 @@ In this project, I am using CSS grid and flex in order to create a simple mockup
 --bg-200:#ebe2cd;
 --bg-300:#c2baa6;
 
+# Notes for myself, on future projects
+- Always start with a non-code design, to help your planning.
+- Set each element's paddings and areas beforehand, and you can change them later.
+- Bem methodology cannot be fully applied in a single-page design.
+- Don't be overzealous naming BEM components from the start, because you may need to make changes.
+- Make your themes more coherent by planning it beforehand.
+
